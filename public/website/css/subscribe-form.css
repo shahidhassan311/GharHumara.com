@@ -1,0 +1,99 @@
+/*==================     Subscribe Form     ======================*/
+.subscribe-form {
+    position: relative;
+    display: block;
+    margin-top: 9px;
+    width: 74%;
+}
+.subscribe-form label {
+    display: inline-block;
+    position: relative;
+    padding: 6.5px 10px 6.5px;
+    background: #ffffff;
+    border: 1px solid #ededed;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.subscribe-form label.name {
+    width: 65%;
+}
+.subscribe-form label.email {
+    width: 65%;
+}
+.subscribe-form input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    vertical-align: baseline;
+    box-shadow: none;
+    color: #777777;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    height: 20px;
+    text-indent: 10px;
+}
+.subscribe-form a[data-type="submit"] {
+    display: inline-block;
+    padding: 3px 51px;
+    text-align: center;
+    background: #d4af36;
+    color: #FFF;
+}
+.subscribe-form a[data-type="submit"]:hover {
+    background: #d4af36;
+    color: white;
+}
+* + a[data-type='submit'] {
+    margin-left: 25px;
+}
+h2 + .subscribe-form {
+    margin-left: 39px;
+}
+.subscribe-form .error,
+.subscribe-form .success {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 10px;
+    line-height: 12px;
+}
+.subscribe-form .error {
+    color: #f00;
+    overflow: hidden;
+    height: 0;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.subscribe-form label.invalid .error {
+    height: 21px;
+}
+.subscribe-form .success {
+    display: none;
+    color: #0f0;
+}
+@media (max-width: 1199px) {
+    .subscribe-form label.name,
+    .subscribe-form label.email {
+        display: block;
+        width: 100%;
+    }
+    .subscribe-form * + label,
+    .subscribe-form * + a[data-type='submit'] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    footer .subscribe-form {
+        margin-left: 0;
+    }
+}

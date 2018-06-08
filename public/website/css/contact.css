@@ -1,0 +1,94 @@
+.contactbox{
+    padding-top: 55px;
+    padding-bottom: 55px;
+    border-top: 2px solid rgba(212, 175, 54, 0.72);
+}
+input{
+    width: 100% !important;
+}
+textarea{
+    width: 100% !important;
+}
+h5{
+    color:#d4af36 !important;
+    font-weight: bold !important;
+    margin-bottom: 0px;
+}
+
+span{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+h3{
+    margin-top: 0px !important;
+    margin-bottom: 23px !important;
+
+}
+.sendbtn{
+    background: #d4af36;
+    border-color: #d4af36;
+    margin-right: 14px;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+
+}
+
+.sendbtn:hover{
+    background: black;
+    border-color: black;
+    color: white;
+}
+.sendbtn:focus{
+    background: black;
+    border-color: transparent !important;
+    color: white;
+}
+.sendbtn:visited{
+    background: black;
+    border-color: transparent !important;
+    color: white;
+}
+.sendbtn:active{
+    background: black;
+    border-color: black;
+    color: white;
+}
+
+.mailicon{
+    margin-top: 45px;
+    opacity: 0.5;
+    width: 260px;
+}
+
+@media(max-width: 991px){
+.contactboxdiv{
+    margin-bottom: 80px !important;
+    padding: 0px;
+}
+    .firstfield{
+        padding: 0px;
+    }
+    .secondfield{
+        padding: 0px;
+    }
+    .thirdfield{
+        padding: 0px;
+    }
+    .fourthfield{
+        padding: 0px;
+    }
+    .sendbtn{
+        float: left !important;
+        margin-left: 14px !important;
+
+    }
+}
+
+@media(max-width: 479px){
+    .maincontactcontainer{
+        width:400px !important;
+    }
+}
